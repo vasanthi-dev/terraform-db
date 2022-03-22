@@ -1,0 +1,12 @@
+variable "ENV" {}
+variable "SSH_USERNAME" {}
+variable "SSH_PASSWORD" {}
+variable "AMI" {}
+variable "INSTANCE_TYPE" {}
+variable "SUBNET_ID" {}
+variable "VPC_ID" {}
+variable "PRIVATE_SUBNET_CIDR" {}
+variable "ALL_SUBNET_CIDR" {}
+variable "DB_COMPONENT" {}
+variable "DB_PORT" {}
+variable "PRIVATE_HOSTED_ZONEID" {}
