@@ -1,6 +1,6 @@
 resource "null_resource" "db-deploy" {
   triggers = {
-    instance_ids = join(",", aws_spot_instance_request.db.spot_instance_id)
+    instance_ids = aws_spot_instance_request.db.spot_instance_id
   }
 
   provisioner "remote-exec" {
