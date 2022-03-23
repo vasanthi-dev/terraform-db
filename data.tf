@@ -27,6 +27,6 @@ data "aws_secretsmanager_secret" "dev" {
   name = "dev-env"
 }
 
-data "aws_secretsmanager_secret_version" "secret" {
+data "aws_secretsmanager_secret_version" "dev-secrets" {
   secret_id = data.aws_secretsmanager_secret.dev.id
 }
